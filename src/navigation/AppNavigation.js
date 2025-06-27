@@ -39,11 +39,11 @@ const AppNavigation = () => {
 
      
     {/* <Stack.Screen name='FirstScreen'component={CarouselScreen} /> */}
-        <Stack.Screen name='Home'component={HomeScreen} />
-            <Stack.Screen name='BottomTab'component={BottomTab} />
+        {/* <Stack.Screen name='Home'component={HomeScreen} /> */}
+            {/* <Stack.Screen name='BottomTab'component={BottomTab} /> */}
                 <Stack.Screen name='Genre'component={Genre} />
                 <Stack.Screen name='Camera'component={Camera} />
-                {/* <Stack.Screen name='HomePage'component={HomePage} /> */}
+                <Stack.Screen name='HomePage'component={HomePage} />
 
    </Stack.Navigator>
         )
@@ -60,7 +60,7 @@ const AppNavigation = () => {
     <Stack.Screen name='Home'component={HomeScreen} />
     <Stack.Screen name='Genre'component={Genre} />
     <Stack.Screen name='Camera'component={Camera} />
-    {/* <Stack.Screen name='HomePage'component={HomePage} /> */}
+    <Stack.Screen name='HomePage'component={HomePage} />
     
 
    </Stack.Navigator>

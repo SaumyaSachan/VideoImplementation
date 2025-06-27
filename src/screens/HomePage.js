@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, FlatList, ScrollView }
 
 // import Ionicons from 'react-native-vector-icons/MaterialCommunityIcons';
 // import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-// import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 // import AntDesign from 'react-native-vector-icons/AntDesign';
 
 
@@ -27,7 +27,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      {/* <ScrollView> */}
+      <ScrollView>
         {/* Header */}
         {/* <View style={styles.header}>
           <Image source={require('../../assets/logo.png')} style={styles.logo} />
@@ -37,20 +37,20 @@ const HomeScreen = () => {
             <Image source={require('../../assets/Intro1.png')} style={styles.avatar} />
           </View>
         </View> */}
-        {/* <View style={styles.header}>
+        <View style={styles.header}>
             <Image source={require('../../assets/logo.png')} style={styles.logo} />
         <View style={styles.headerIcons}>
         <FontAwesome name="search" size={22} color="#00BFFF" style={styles.iconBox} />
         <FontAwesome name="bell-o" size={22} color="#00BFFF" style={styles.iconBox} />
         <Image source={require('../../assets/Intro1.png')} style={styles.avatar} />
         </View>
-        </View> */}
+        </View>
 
 
         {/* Featured Banner */}
-        {/* <Image source={require('../../assets/Intro1.png')} style={styles.bannerImage} />
+        <Image source={require('../../assets/Intro1.png')} style={styles.bannerImage} />
         <Text style={styles.title}>Morbius</Text>
-        <View style={styles.actionRow}> */}
+        <View style={styles.actionRow}>
           {/* <TouchableOpacity style={styles.moreDetails}>
             <Icon name="information-circle-outline" size={18} color="#fff" />
             <Text style={styles.moreText}> More details</Text>
@@ -64,13 +64,13 @@ const HomeScreen = () => {
             <Text style={styles.moreText}> Add to playlist</Text>
           </TouchableOpacity> */}
 
-          {/* <TouchableOpacity style={styles.moreDetails}>
+          <TouchableOpacity style={styles.moreDetails}>
   <FontAwesome name="info" size={18} color="#fff" />
   <Text style={styles.moreText}> More details</Text>
 </TouchableOpacity>
 
 <TouchableOpacity style={styles.watchButton}>
-  <Ionicons name="play" size={18} color="#fff" />
+  <FontAwesome name="play" size={18} color="#fff" />
   <Text style={styles.watchText}> Watch Now</Text>
 </TouchableOpacity>
 
@@ -80,7 +80,7 @@ const HomeScreen = () => {
 </TouchableOpacity>
 
         </View>
-        <Text style={styles.genre}>Action | Thriller | Suspense</Text> */}
+        <Text style={styles.genre}>Action | Thriller | Suspense</Text>
 
         {/* Flash Channel */}
         {/* <View style={styles.section}>
@@ -96,7 +96,7 @@ const HomeScreen = () => {
         /> */}
 
         {/* Stay at Home */}
-        {/* <View style={styles.section}>
+        <View style={styles.section}>
           <Text style={styles.sectionTitle}>Stay at Home</Text>
           <Text style={styles.sectionMore}>More</Text>
         </View>
@@ -107,7 +107,7 @@ const HomeScreen = () => {
           keyExtractor={(item) => item.id}
           showsHorizontalScrollIndicator={false}
         />
-      </ScrollView> */}
+      </ScrollView>
 
       {/* Bottom Navigation */}
       {/* <View style={styles.bottomNav}>
@@ -118,13 +118,13 @@ const HomeScreen = () => {
         <Icon name="menu" size={24} color="#fff" />
       </View> */}
 
-     {/* <View style={styles.bottomNav}>
+     <View style={styles.bottomNav}>
   <FontAwesome name="home" size={24} color="#fff" />
   <FontAwesome name="video-camera" size={24} color="#fff" />
   <FontAwesome name="smile-o" size={24} color="#fff" />
   <FontAwesome name="tv" size={24} color="#fff" />
   <FontAwesome name="bars" size={24} color="#fff" />
-</View> */}
+</View>
 
     </View>
   );

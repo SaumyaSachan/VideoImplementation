@@ -151,7 +151,7 @@ export default function GenreScreen({ navigation }) {
 
       <TouchableOpacity
         style={styles.confirmButton}
-        onPress={() => console.log('Selected genres:', selectedGenres)}
+        onPress={() => navigation.navigate('HomePage')}
       >
         <Text style={styles.confirmText}>Confirm</Text>
       </TouchableOpacity>

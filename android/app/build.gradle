@@ -115,6 +115,12 @@ android {
     }
 }
 
+project.ext.vectoricons = [
+      iconFontNames: ['MaterialCommunityIcons.ttf', 'FontAwesome.ttf', 'AntDesign.ttf'] // Add other font files as needed
+]
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
