@@ -1,6 +1,7 @@
 /**
  * @format
  */
+import 'react-native-reanimated'; // MUST be the first import!
 
 import {AppRegistry} from 'react-native';
 import App from './App';
