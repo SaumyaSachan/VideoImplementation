@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import auth from '@react-native-firebase/auth';
 
-const HomeScreen = ({ navigation }) => {
+const LogOut = ({ navigation }) => {
   const logout = () => {
     auth().signOut().then(() => {
       navigation.replace('BottomTab');
@@ -20,7 +20,7 @@ const HomeScreen = ({ navigation }) => {
   );
 };
 
-export default HomeScreen;
+export default LogOut;
 
 const styles = StyleSheet.create({
   container: {

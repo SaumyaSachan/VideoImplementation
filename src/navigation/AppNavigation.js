@@ -6,10 +6,17 @@ import SplashScreen from '../screens/SplashScreen';
 import BottomTab  from '../screens/BottomTab'
 import auth from '@react-native-firebase/auth';
 import { useState, useEffect } from 'react';
-import HomeScreen from '../components/HomeScreen';
+import LogOut from '../components/LogOut';
 import Genre from '../screens/Genre';
 import Camera from '../screens/Camera';
 import HomePage from '../screens/HomePage';
+import PlayVideo from '../components/PlayVideo';
+import HomeDrawer from '../screens/HomeDrawer';
+import DummyDrawer from '../screens/DummyDrawer';
+import Notification from '../screens/Notification';
+import Search from '../screens/Search';
+import VideoDetailScreen from '../screens/VideoDetailScreen';
+import DownloadedVideo from '../screens/DownloadedVideo';
 
 
 const  Stack=createNativeStackNavigator();
@@ -36,14 +43,24 @@ const AppNavigation = () => {
 
         user ? (
                    <Stack.Navigator >
-
+    <Stack.Screen name='SplashScreen'component={SplashScreen} options={{headerShown:false}}/>
      
     {/* <Stack.Screen name='FirstScreen'component={CarouselScreen} /> */}
-        {/* <Stack.Screen name='Home'component={HomeScreen} /> */}
+        {/* <Stack.Screen name='LogOut'component={LogOut} /> */}
             {/* <Stack.Screen name='BottomTab'component={BottomTab} /> */}
+
                 <Stack.Screen name='Genre'component={Genre} />
                 <Stack.Screen name='Camera'component={Camera} />
                 <Stack.Screen name='HomePage'component={HomePage} />
+
+                {/* <Stack.Screen name="HomeDrawer" component={HomeDrawer}/> */}
+
+                <Stack.Screen name='PlayVideo' component={PlayVideo} />
+                {/* <Stack.Screen name='DummyDrawer'component={DummyDrawer}  options={{ headerShown: false }}/> */}
+                <Stack.Screen name='Notification' component={Notification} />
+                 <Stack.Screen name='Search' component={Search} />
+                 <Stack.Screen name='VideoDetailScreen' component={VideoDetailScreen} />
+                 <Stack.Screen name='DownloadedVideo' component={DownloadedVideo} />
 
    </Stack.Navigator>
         )
@@ -57,11 +74,12 @@ const AppNavigation = () => {
     
     {/* <Stack.Screen name='FirstScreen'component={CarouselScreen} /> */}
     <Stack.Screen name='BottomTab'component={BottomTab} />
-    <Stack.Screen name='Home'component={HomeScreen} />
+    <Stack.Screen name='LogOut'component={LogOut} />
     <Stack.Screen name='Genre'component={Genre} />
     <Stack.Screen name='Camera'component={Camera} />
     <Stack.Screen name='HomePage'component={HomePage} />
-    
+     <Stack.Screen name='PlayVideo'component={PlayVideo} />
+      <Stack.Screen name='Search' component={Search} />
 
    </Stack.Navigator>
 

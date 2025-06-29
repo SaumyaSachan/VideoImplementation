@@ -1,3 +1,4 @@
+// import 'react-native-gesture-handler';
 import 'react-native-reanimated';
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
@@ -9,11 +10,9 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 const App = () => {
   return (
 
-    // <View>
-    //   <Text>hello</Text>
-    // </View>
+    
 
-    // <GestureHandlerRootView  style={{flex:1}}>
+    <GestureHandlerRootView  style={{flex:1}}>
     <NavigationContainer > 
     
      
@@ -22,7 +21,7 @@ const App = () => {
     
      </NavigationContainer>
 
-    //  </GestureHandlerRootView>
+     </GestureHandlerRootView>
   )
 }
 

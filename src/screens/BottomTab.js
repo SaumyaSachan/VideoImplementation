@@ -6,7 +6,7 @@ import { View } from 'react-native';
 
 import SignUp from '../components/SignUp';
 import SignIn from '../components/SignIn';
-import HomeScreen from '../components/HomeScreen';
+import LogOut from '../components/LogOut';
 
 const Tab = createMaterialTopTabNavigator();
 

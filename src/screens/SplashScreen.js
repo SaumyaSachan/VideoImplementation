@@ -7,7 +7,7 @@ const SplashScreen = () => {
 const navigation =useNavigation();
 useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace('BottomTab'); // Replaces SplashScreen with FirstScreen
+      navigation.replace('Genre'); // Replaces SplashScreen with FirstScreen
     }, 3000); // 3 seconds
 
     return () => clearTimeout(timer); // Clear timeout on unmount
